@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Pages</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pages</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="page-logo" href="./index.html">Pages</a>
+      <a class="page-logo link" href="./index.html">Pages</a>
       <ul class="header-socials">
         <li class="header-socials-item">
           <a
@@ -60,7 +71,7 @@
         <ul class="page-navigation-links">
           <li class="page-navigation-item">
             <a
-              class="page-navigation-link"
+              class="page-navigation-link link"
               href="./index.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -70,7 +81,7 @@
           </li>
           <li>
             <a
-              class="page-navigation-link"
+              class="page-navigation-link link"
               href="./about.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -80,7 +91,7 @@
           </li>
           <li>
             <a
-              class="page-navigation-link"
+              class="page-navigation-link link"
               href="./pages.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,7 +101,7 @@
           </li>
           <li>
             <a
-              class="page-navigation-link"
+              class="page-navigation-link link"
               href="./contact-us.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,24 +110,32 @@
             >
           </li>
         </ul>
+        <button class="nav-order-button button button-main" type="button">
+          Order Today
+        </button>
       </nav>
     </header>
     <!-- Main -->
     <main class="main">
       <!-- Welcome section -->
       <section class="welcome">
-        <div class="welcome-left-column">
-          <span class="welcome-decoration-text">Welcome to Pages</span>
-          <h1 class="welcome-header">Your Books From The Best Writer.</h1>
-          <p class="welcome-text">
-            We believe that reading books are essential to a healthy culture.
-            They’re where authors can connect with readers.
-          </p>
-          <div class="welcome-right-column">
-            <button class="welcome-order-button" type="button">
+        <div class="container">
+          <div class="welcome-left-column">
+            <span class="welcome-decoration-text">Welcome To Pages!!!</span>
+            <h1 class="welcome-header">Your Books From The Best Writer.</h1>
+            <p class="welcome-text">
+              We believe that reading books are essential to a healthy culture.
+              They’re where authors can connect with readers.
+            </p>
+            <button
+              class="welcome-order-button button button-main"
+              type="button"
+            >
               Order Today
             </button>
-            <button class="welcome-read-demo-button">Read Free Demo</button>
+            <button class="welcome-read-demo-button button">
+              Read Free Demo
+            </button>
           </div>
           <ul class="welcome-statistic">
             <li class="welcome-statistic-item">
@@ -134,272 +153,301 @@
               </span>
             </li>
           </ul>
+          <div class="welcome-right-column">
+            <img
+              class="welcome-book-cover"
+              src="./images/main-image.jpg"
+              alt="main-image"
+              width="592"
+              height="800"
+            />
+          </div>
         </div>
-        <img
-          class="welcome-book-cover"
-          src="./images/main-image.jpg"
-          alt="main-image"
-          width="592"
-          height="800"
-        />
       </section>
 
       <!-- Author's book  section-->
       <section class="authors-book">
-        <h2 class="authors-book-header">The Author’s Book</h2>
-        <ul class="authors-books">
-          <li class="authors-books-item">
-            <article class="authors-book-card">
-              <img
-                class="authors-book-image"
-                src="./images/book-cover-1.jpg"
-                alt="book-cover"
-                width="285"
-                height="382"
-              />
-              <div class="authors-book-info">
-                <h3 class="authors-book-header">Atomic One’s</h3>
-                <span class="authors-book-price">$ 13.84 USD</span>
-                <p class="authors-book-description">
-                  As the book contains theoretical content as well as solved
-                  questions.
-                </p>
-                <a
-                  class="authors-book-link"
-                  href="./book.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Printed Book
-                </a>
-                <button class="authors-book-order-button" type="button">
-                  Order Now
-                </button>
-              </div>
-            </article>
-          </li>
-          <li class="authors-books-item">
-            <article class="authors-book-card">
-              <img
-                class="authors-book-image"
-                src="./images/book-cover-2.jpg"
-                alt="book-cover"
-                width="285"
-                height="382"
-              />
-              <div class="authors-book-info">
-                <h3 class="authors-book-header">The Dark Light</h3>
-                <span class="authors-book-price">$ 86.11 USD</span>
-                <p class="authors-book-description">
-                  As the book contains theoretical content as well as solved
-                  questions.
-                </p>
-                <a
-                  class="authors-book-link"
-                  href="./book.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Printed Book
-                </a>
-                <button class="authors-book-order-button" type="button">
-                  Order Now
-                </button>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="authors-book-main-header section-header-main">
+            The Author’s Book
+          </h2>
+          <ul class="authors-books">
+            <li class="authors-books-item">
+              <article class="authors-book-card">
+                <img
+                  class="authors-book-image"
+                  src="./images/book-cover-1.jpg"
+                  alt="book-cover"
+                  width="285"
+                  height="382"
+                />
+                <div class="authors-book-info">
+                  <h3 class="authors-book-header">Atomic One’s</h3>
+                  <span class="authors-book-price">$ 13.84 USD</span>
+                  <p class="authors-book-description">
+                    As the book contains theoretical content as well as solved
+                    questions.
+                  </p>
+                  <a
+                    class="authors-book-link link"
+                    href="./book.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Printed Book
+                  </a>
+                  <button
+                    class="authors-book-order-button button button-main"
+                    type="button"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li class="authors-books-item">
+              <article class="authors-book-card">
+                <img
+                  class="authors-book-image"
+                  src="./images/book-cover-2.jpg"
+                  alt="book-cover"
+                  width="285"
+                  height="382"
+                />
+                <div class="authors-book-info">
+                  <h3 class="authors-book-header">The Dark Light</h3>
+                  <span class="authors-book-price">$ 86.11 USD</span>
+                  <p class="authors-book-description">
+                    As the book contains theoretical content as well as solved
+                    questions.
+                  </p>
+                  <a
+                    class="authors-book-link link"
+                    href="./book.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Printed Book
+                  </a>
+                  <button
+                    class="authors-book-order-button button button-main"
+                    type="button"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Author section -->
       <section class="author">
-        <img
-          class="author-photo"
-          src="./images/author.jpg"
-          alt="autor"
-          width="525"
-          height="620"
-        />
-        <div class="author-info">
-          <h2 class="author-info-header">About The Author</h2>
-          <p class="author-info-description">
-            We believe that bookstores are essential to a healthy culture.
-            They’re where authors can connect with readers, where we discover
-            new writers, where children get hooked on the thrill of reading that
-            can last a lifetime.
-          </p>
-          <ul class="author-statistic">
-            <li class="author-statistic-item">
-              <span class="author-statistic-item-value">02</span
-              ><span class="author-statistic-item-parameter"
-                >Books Published</span
-              >
-            </li>
-            <li class="author-statistic-item">
-              <span class="author-statistic-item-value">4.5</span
-              ><span class="author-statistic-item-parameter">User Reviews</span>
-            </li>
-            <li class="author-statistic-item">
-              <span class="author-statistic-item-value">04</span
-              ><span class="author-statistic-item-parameter"
-                >Best Seller Awards</span
-              >
-            </li>
-          </ul>
-          <article class="author-qr">
-            <h3 class="author-qr-header">Author</h3>
-            <img
-              class="author-qr-image"
-              src="./images/author-qr-code.jpg"
-              alt="QR Code"
-              width="130"
-              height="130"
-            />
-            <ul class="author-info-items">
-              <li class="author-info-item-name">John Abraham , Ph.d</li>
-              <li class="author-info-item-email">
-                Main:
-                <a
-                  class="author-info-email-link"
-                  href="mailto:johnabraham@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+        <div class="container">
+          <img
+            class="author-photo"
+            src="./images/author.jpg"
+            alt="autor"
+            width="525"
+            height="620"
+          />
+          <div class="author-info">
+            <h2 class="author-info-header section-header-main">
+              About The Author
+            </h2>
+            <p class="author-info-description">
+              We believe that bookstores are essential to a healthy culture.
+              They’re where authors can connect with readers, where we discover
+              new writers, where children get hooked on the thrill of reading
+              that can last a lifetime.
+            </p>
+            <ul class="author-statistic">
+              <li class="author-statistic-item">
+                <span class="author-statistic-item-value">02</span
+                ><span class="author-statistic-item-parameter"
+                  >Books Published</span
                 >
-                  johnabraham@gmail.com
-                </a>
               </li>
-              <li class="author-info-item-phone">
-                Phone:
-                <a
-                  class="author-phone-link"
-                  href="tel:+21235459000"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <li class="author-statistic-item">
+                <span class="author-statistic-item-value">4.5</span
+                ><span class="author-statistic-item-parameter"
+                  >User Reviews</span
                 >
-                  (+2) 123 545 9000
-                </a>
+              </li>
+              <li class="author-statistic-item">
+                <span class="author-statistic-item-value">04</span
+                ><span class="author-statistic-item-parameter"
+                  >Best Seller Awards</span
+                >
               </li>
             </ul>
-          </article>
+            <article class="author-qr">
+              <h3 class="author-qr-header visually-hidden">Author</h3>
+              <img
+                class="author-qr-image"
+                src="./images/author-qr-code.jpg"
+                alt="QR Code"
+                width="130"
+                height="130"
+              />
+              <ul class="author-info-items">
+                <li class="author-info-item-name">
+                  <h4>John Abraham , Ph.d</h4>
+                </li>
+                <li class="author-info-item-email">
+                  Main:
+                  <a
+                    class="author-info-email-link link"
+                    href="mailto:johnabraham@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    johnabraham@gmail.com
+                  </a>
+                </li>
+                <li class="author-info-item-phone">
+                  Phone:
+                  <a
+                    class="author-phone-link link"
+                    href="tel:+21235459000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    (+2) 123 545 9000
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
       <!-- Trusted section -->
       <section class="trusted">
-        <h2 class="trusted-header">Trusted By The Best</h2>
-        <ul class="partner-list">
-          <li class="partner-list-item">
-            <article class="partnet-card">
-              <img
-                class="partner-image"
-                src="./images/trusted-1.jpg"
-                alt="Trusted Shop"
-                width="189"
-                height="100"
-              />
-              <h3 class="partner-header">Amazen Corp.</h3>
-              <p class="partner-description">
-                They has been helping readers, music lovers, and videophiles
-                find quality material.
-              </p>
-            </article>
-          </li>
-          <li class="partner-list-item">
-            <article class="partner-card">
-              <img
-                class="partner-image"
-                src="./images/trusted-2.jpg"
-                alt="Trusted Shop"
-                width="189"
-                height="100"
-              />
-              <h3 class="partner-header">Megan Books</h3>
-              <p class="partner-description">
-                We help physical bookstores manage their overstock to the book
-                inventory.
-              </p>
-            </article>
-          </li>
-          <li class="partner-list-item">
-            <article class="partner-card">
-              <img
-                class="partner-image"
-                src="./images/trusted-3.jpg"
-                alt="Trusted Shop"
-                width="189"
-                height="100"
-              />
-              <h3 class="partner-header">Megank</h3>
-              <p class="partner-description">
-                Bookstore serving up the full spectrum of Black literature and
-                wine black books.
-              </p>
-            </article>
-          </li>
-          <li class="partner-list-item">
-            <article class="partner-card">
-              <img
-                class="partner-image"
-                src="./images/trusted-4.jpg"
-                alt="Trusted Shop"
-                width="189"
-                height="100"
-              />
-              <h3 class="partner-header">Urban Store</h3>
-              <p class="partner-description">
-                We also carry the latest records, issues of all of your favorite
-                comic books.
-              </p>
-            </article>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="trusted-header section-header-main">
+            Trusted By The Best
+          </h2>
+          <ul class="partner-list">
+            <li class="partner-list-item">
+              <article class="partnet-card">
+                <img
+                  class="partner-image"
+                  src="./images/trusted-1.jpg"
+                  alt="Trusted Shop"
+                  width="189"
+                  height="100"
+                />
+                <h3 class="partner-header">Amazen Corp.</h3>
+                <p class="partner-description">
+                  They has been helping readers, music lovers, and videophiles
+                  find quality material.
+                </p>
+              </article>
+            </li>
+            <li class="partner-list-item">
+              <article class="partner-card">
+                <img
+                  class="partner-image"
+                  src="./images/trusted-2.jpg"
+                  alt="Trusted Shop"
+                  width="189"
+                  height="100"
+                />
+                <h3 class="partner-header">Megan Books</h3>
+                <p class="partner-description">
+                  We help physical bookstores manage their overstock to the book
+                  inventory.
+                </p>
+              </article>
+            </li>
+            <li class="partner-list-item">
+              <article class="partner-card">
+                <img
+                  class="partner-image"
+                  src="./images/trusted-3.jpg"
+                  alt="Trusted Shop"
+                  width="189"
+                  height="100"
+                />
+                <h3 class="partner-header">Megank</h3>
+                <p class="partner-description">
+                  Bookstore serving up the full spectrum of Black literature and
+                  wine black books.
+                </p>
+              </article>
+            </li>
+            <li class="partner-list-item">
+              <article class="partner-card">
+                <img
+                  class="partner-image"
+                  src="./images/trusted-4.jpg"
+                  alt="Trusted Shop"
+                  width="189"
+                  height="100"
+                />
+                <h3 class="partner-header">Urban Store</h3>
+                <p class="partner-description">
+                  We also carry the latest records, issues of all of your
+                  favorite comic books.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Get books section -->
       <section class="get-book">
-        <div class="get-book-info">
-          <h2 class="get-book-header">Get Book Copy Today!</h2>
-          <p class="get-book-description">
-            We believe that bookstores are essential to a healthy culture.
-            They’re where authors can connect with readers.
-          </p>
-          <button class="get-book-order-button" type="button">
-            Order Today
-          </button>
+        <div class="container">
+          <div class="get-book-info">
+            <h2 class="get-book-header">Get Book Copy Today!</h2>
+            <p class="get-book-description">
+              We believe that bookstores are essential to a healthy culture.
+              They’re where authors can connect with readers.
+            </p>
+            <button
+              class="get-book-order-button button button-main"
+              type="button"
+            >
+              Order Today
+            </button>
+          </div>
+          <img
+            class="get-book-image"
+            src="./images/tea-book.jpg"
+            alt="Book and Tea"
+            width="560"
+            height="394"
+          />
         </div>
-        <img
-          class="get-book-image"
-          src="./images/tea-book.jpg"
-          alt="Book and Tea"
-          width="560"
-          height="394"
-        />
       </section>
 
       <!-- Skills section -->
       <section class="skills">
-        <h2 class="skill-header">What Will You Learn?</h2>
+        <h2 class="skill-header section-header-main">What Will You Learn?</h2>
         <ul class="skills-list">
           <li class="skills-list-item">
-            <h3 class="skills-item-header">Skill</h3>
+            <h3 class="skills-item-header visually-hidden">Skill</h3>
             <p class="skills-item-description">
               Use HDFS & Map Reduce for storing & analyzing data at scale.
             </p>
           </li>
           <li class="skills-list-item">
-            <h3 class="skills-item-header">Skill</h3>
+            <h3 class="skills-item-header visually-hidden">Skill</h3>
             <p class="skills-item-description">
               Consume streaming data using Spark Streaming, Flink, and Storm.
             </p>
           </li>
           <li class="skills-list-item">
-            <h3 class="skills-item-header">Skill</h3>
+            <h3 class="skills-item-header visually-hidden">Skill</h3>
             <p class="skills-item-description">
               Choose an appropriate data storage technology for your application
             </p>
           </li>
           <li class="skills-list-item">
-            <h3 class="skills-item-header">Skill</h3>
+            <h3 class="skills-item-header visually-hidden">Skill</h3>
             <p class="skills-item-description">
               Analyze non-relational data using HBase, Cassandra, and MongoDB.
             </p>
@@ -416,300 +464,335 @@
 
       <!-- Knowledge section -->
       <section class="knowledge">
-        <h2 class="knowledge-header">Enhance knowledge & Vision</h2>
-        <ul class="knowledge-list">
-          <li class="knowledge-list-item">
-            <h3 class="knowledge-item-header">Chapter-1 Get Started Intro</h3>
-            <p class="knowledge-item-description">
-              You can double your knowledge by reading this ever needed book
-              that can last a lifetime.
-            </p>
-            <ul class="knowledge-item-parameters">
-              <li class="knowledge-item-parameter">
-                Pages:
-                <span class="knowledge-parameter-value">106 pages</span>
-              </li>
-              <li class="knowledge-item-parameter">
-                Length:
-                <span class="knowledge-parameter-value">2 Hours</span>
-              </li>
-            </ul>
-          </li>
-          <li class="knowledge-list-item">
-            <h3 class="knowledge-item-header">Chapter-2 The Roman Culture</h3>
-            <p class="knowledge-item-description">
-              It will help to improve your life career with the perfect and
-              needed knowledge about your life.
-            </p>
-            <ul class="knowledge-item-parameters">
-              <li class="knowledge-item-parameter">
-                Pages:
-                <span class="knowledge-parameter-value">180 pages</span>
-              </li>
-              <li class="knowledge-item-parameter">
-                Length:
-                <span class="knowledge-parameter-value">3 Hours</span>
-              </li>
-            </ul>
-          </li>
-          <li class="knowledge-list-item">
-            <h3 class="knowledge-item-header">Chapter-3 How They Servived</h3>
-            <p class="knowledge-item-description">
-              We wanted to create an easy, convenient way for you to get your
-              books & support.
-            </p>
-            <ul class="knowledge-item-parameters">
-              <li class="knowledge-item-parameter">
-                Pages:
-                <span class="knowledge-parameter-value">250 pages</span>
-              </li>
-              <li class="knowledge-item-parameter">
-                Length:
-                <span class="knowledge-parameter-value">4 Hours</span>
-              </li>
-            </ul>
-          </li>
-          <li class="knowledge-list-item">
-            <h3 class="knowledge-item-header">Chapter-4 The End Of Romans</h3>
-            <p class="knowledge-item-description">
-              Promote your book via Pages shop to support your writing & reading
-              career.
-            </p>
-            <ul class="knowledge-item-parameters">
-              <li class="knowledge-item-parameter">
-                Pages:
-                <span class="knowledge-parameter-value">175 pages</span>
-              </li>
-              <li class="knowledge-item-parameter">
-                Length:
-                <span class="knowledge-parameter-value">3 Hours</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <button class="knowledge-free-trial-button" type="button">
-          Start a 15-Days Free Trail
-        </button>
-        <a
-          class="knowledge-chapters-description-link"
-          href="./description.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Short description about each chapter
-        </a>
-        <p class="knowledge-questions">
-          Have any questions?
+        <div class="container">
+          <h2 class="knowledge-header section-header-main">
+            Enhance knowledge & Vision
+          </h2>
+          <ul class="knowledge-list">
+            <li class="knowledge-list-item">
+              <h3 class="knowledge-item-header">Chapter-1 Get Started Intro</h3>
+              <p class="knowledge-item-description">
+                You can double your knowledge by reading this ever needed book
+                that can last a lifetime.
+              </p>
+              <ul class="knowledge-item-parameters">
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-parameter-value">106 pages</span>
+                </li>
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-parameter-value">2 Hours</span>
+                </li>
+              </ul>
+            </li>
+            <li class="knowledge-list-item">
+              <h3 class="knowledge-item-header">Chapter-2 The Roman Culture</h3>
+              <p class="knowledge-item-description">
+                It will help to improve your life career with the perfect and
+                needed knowledge about your life.
+              </p>
+              <ul class="knowledge-item-parameters">
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-parameter-value">180 pages</span>
+                </li>
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-parameter-value">3 Hours</span>
+                </li>
+              </ul>
+            </li>
+            <li class="knowledge-list-item">
+              <h3 class="knowledge-item-header">Chapter-3 How They Servived</h3>
+              <p class="knowledge-item-description">
+                We wanted to create an easy, convenient way for you to get your
+                books & support.
+              </p>
+              <ul class="knowledge-item-parameters">
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-parameter-value">250 pages</span>
+                </li>
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-parameter-value">4 Hours</span>
+                </li>
+              </ul>
+            </li>
+            <li class="knowledge-list-item">
+              <h3 class="knowledge-item-header">Chapter-4 The End Of Romans</h3>
+              <p class="knowledge-item-description">
+                Promote your book via Pages shop to support your writing &
+                reading career.
+              </p>
+              <ul class="knowledge-item-parameters">
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-parameter-value">175 pages</span>
+                </li>
+                <li class="knowledge-item-parameter">
+                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-parameter-value">3 Hours</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button
+            class="knowledge-free-trial-button button button-main"
+            type="button"
+          >
+            Start a 15-Days Free Trail
+          </button>
           <a
-            class="knowledge-contact-us-link"
-            href="./contact-us.html"
+            class="knowledge-chapters-description-link link"
+            href="./description.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Contact Us
+            Short description about each chapter
           </a>
-        </p>
+          <p class="knowledge-questions">
+            <span class="knowledge-questions-text"> Have any questions? </span>
+            <a
+              class="knowledge-contact-us-link link"
+              href="./contact-us.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Us
+            </a>
+          </p>
+        </div>
       </section>
       <section class="readers-reviews">
-        <div class="readers-reviews-info">
-          <h2 class="readers-reviews-header">Words From Our</h2>
-          <p class="readers-reviews-description">
-            We believe that bookstores are essential to a healthy culture.
-            They’re where authors can connect with readers, where we discover
-            new writers, where children get hooked on the thrill of reading that
-            can last a lifetime.
-          </p>
-          <div class="readers-review-overall">
-            <div class="rating">
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
+        <div class="container">
+          <div class="readers-reviews-info">
+            <h2 class="readers-reviews-header section-header-main">
+              Words From Our
+            </h2>
+            <p class="readers-reviews-description">
+              We believe that bookstores are essential to a healthy culture.
+              They’re where authors can connect with readers, where we discover
+              new writers, where children get hooked on the thrill of reading
+              that can last a lifetime.
+            </p>
+            <div class="readers-review-overall">
+              <div class="rating">
+                <div class="rating-item"></div>
+                <div class="rating-item"></div>
+                <div class="rating-item"></div>
+                <div class="rating-item"></div>
+                <div class="rating-item"></div>
+              </div>
+              <span class="rating-text">(4.8/5)</span>
+              <p class="rating-description">Overall Customer Ratings</p>
             </div>
-            <span class="rating-text">(4.8/5)</span>
-            <p class="rating-description">Overall Customer Ratings</p>
           </div>
-        </div>
-        <div>
-          <article class="reader-review">
-            <img
-              class="reader-review-photo"
-              src="./images/reader-1.jpg"
-              alt="Reader"
-              width="85"
-              height="85"
-            />
-            <h3 class="reader-review-name">James Williams</h3>
-            <div class="rating">
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-            </div>
-            <h4 class="reader-review-header">“ Great Books Collections ”</h4>
-            <p class="reader-review-text">
-              I was searching this book for many years and I was happy that I
-              could find it here.
-            </p>
-          </article>
-          <article class="reader-review">
-            <img
-              class="reader-review-photo"
-              src="./images/reader-2.jpg"
-              alt="Reader"
-              width="85"
-              height="85"
-            />
-            <h3 class="reader-review-name">Chris Adams</h3>
-            <div class="rating">
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-            </div>
-            <h4 class="reader-review-header">“ Perfect Response Author”</h4>
-            <p class="reader-review-text">
-              I had a question about the book and the author response was great
-              & comfort.
-            </p>
-          </article>
-          <article class="reader-review">
-            <img
-              class="reader-review-photo"
-              src="./images/reader-3.jpg"
-              alt="Reader"
-              width="85"
-              height="85"
-            />
-            <h3 class="reader-review-name">Angeline Flora</h3>
-            <div class="rating">
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-              <div class="rating-item"></div>
-            </div>
-            <h4 class="reader-review-header">“ Creative Writing Skill”</h4>
-            <p class="reader-review-text">
-              Sent an email after to books arrived to ask about the author & I
-              received a reply.
-            </p>
-          </article>
+          <div>
+            <ul class="reader-review-list">
+              <li class="reader-review-list-item">
+                <article class="reader-review">
+                  <img
+                    class="reader-review-photo"
+                    src="./images/reader-1.jpg"
+                    alt="Reader"
+                    width="85"
+                    height="85"
+                  />
+                  <h3 class="reader-review-name">James Williams</h3>
+                  <div class="rating">
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                  </div>
+                  <h4 class="reader-review-header">
+                    “ Great Books Collections ”
+                  </h4>
+                  <p class="reader-review-text">
+                    I was searching this book for many years and I was happy
+                    that I could find it here.
+                  </p>
+                </article>
+              </li>
+              <li class="reader-review-list-item">
+                <article class="reader-review">
+                  <img
+                    class="reader-review-photo"
+                    src="./images/reader-2.jpg"
+                    alt="Reader"
+                    width="85"
+                    height="85"
+                  />
+                  <h3 class="reader-review-name">Chris Adams</h3>
+                  <div class="rating">
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                  </div>
+                  <h4 class="reader-review-header">
+                    “ Perfect Response Author”
+                  </h4>
+                  <p class="reader-review-text">
+                    I had a question about the book and the author response was
+                    great & comfort.
+                  </p>
+                </article>
+              </li>
+              <li class="reader-review-list-item">
+                <article class="reader-review">
+                  <img
+                    class="reader-review-photo"
+                    src="./images/reader-3.jpg"
+                    alt="Reader"
+                    width="85"
+                    height="85"
+                  />
+                  <h3 class="reader-review-name">Angeline Flora</h3>
+                  <div class="rating">
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                    <div class="rating-item"></div>
+                  </div>
+                  <h4 class="reader-review-header">
+                    “ Creative Writing Skill”
+                  </h4>
+                  <p class="reader-review-text">
+                    Sent an email after to books arrived to ask about the author
+                    & I received a reply.
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- Resource section -->
       <section class="resources">
-        <h2 class="resources-header">Articles & Resources</h2>
-        <ul class="resource-list">
-          <li class="resource-list-item">
-            <article class="resource-card">
-              <img
-                class="resource-image"
-                src="./images/article-1.jpg"
-                alt="Article"
-                width="420"
-                height="350"
-              />
-              <h3 class="resource-header">
-                Significant reading has more info number
-              </h3>
-              <p class="resource-description">
-                Override the digital divide with additional clickthroughs from
-                DevOps for real-time schemas.
-              </p>
-              <div class="resource-card-footer">
-                <a
-                  class="resource-read-more-link"
-                  href="./article.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Readmore
-                </a>
-                <span class="resource-date">October 6, 2021</span>
-              </div>
-            </article>
-          </li>
-          <li class="resource-list-item">
-            <article class="resource-card">
-              <img
-                class="resource-image"
-                src="./images/article-2.jpg"
-                alt="Article"
-                width="420"
-                height="350"
-              />
-              <h3 class="resource-header">
-                Many variations of pass majority have suffered
-              </h3>
-              <p class="resource-description">
-                Capitalize on low-hanging fruit to identify a ballpark
-                value-added activity to beta test.
-              </p>
-              <div class="resource-card-footer">
-                <a
-                  class="resource-read-more-link"
-                  href="./article.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Readmore
-                </a>
-                <span class="resource-date">October 6, 2021</span>
-              </div>
-            </article>
-          </li>
-          <li class="resource-list-item">
-            <article class="resource-card">
-              <img
-                class="resource-image"
-                src="./images/article-3.jpg"
-                alt="Article"
-                width="420"
-                height="350"
-              />
-              <h3 class="resource-header">
-                Words which don’t look even slightly believable
-              </h3>
-              <p class="resource-description">
-                Podcasting operational change management inside of workflows to
-                establish a framework.
-              </p>
-              <div class="resource-card-footer">
-                <a
-                  class="resource-read-more-link"
-                  href="./article.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Readmore
-                </a>
-                <span class="resource-date">October 6, 2021</span>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="resources-header section-header-main">
+            Articles & Resources
+          </h2>
+          <ul class="resource-list">
+            <li class="resource-list-item">
+              <article class="resource-card">
+                <img
+                  class="resource-image"
+                  src="./images/article-1.jpg"
+                  alt="Article"
+                  width="420"
+                  height="350"
+                />
+                <h3 class="resource-header">
+                  Significant reading has more info number
+                </h3>
+                <p class="resource-description">
+                  Override the digital divide with additional clickthroughs from
+                  DevOps for real-time schemas.
+                </p>
+                <div class="resource-card-footer">
+                  <a
+                    class="resource-read-more-link link"
+                    href="./article.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Readmore
+                  </a>
+                  <span class="resource-date">October 6, 2021</span>
+                </div>
+              </article>
+            </li>
+            <li class="resource-list-item">
+              <article class="resource-card">
+                <img
+                  class="resource-image"
+                  src="./images/article-2.jpg"
+                  alt="Article"
+                  width="420"
+                  height="350"
+                />
+                <h3 class="resource-header">
+                  Many variations of pass majority have suffered
+                </h3>
+                <p class="resource-description">
+                  Capitalize on low-hanging fruit to identify a ballpark
+                  value-added activity to beta test.
+                </p>
+                <div class="resource-card-footer">
+                  <a
+                    class="resource-read-more-link link"
+                    href="./article.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Readmore
+                  </a>
+                  <span class="resource-date">October 6, 2021</span>
+                </div>
+              </article>
+            </li>
+            <li class="resource-list-item">
+              <article class="resource-card">
+                <img
+                  class="resource-image"
+                  src="./images/article-3.jpg"
+                  alt="Article"
+                  width="420"
+                  height="350"
+                />
+                <h3 class="resource-header">
+                  Words which don’t look even slightly believable
+                </h3>
+                <p class="resource-description">
+                  Podcasting operational change management inside of workflows
+                  to establish a framework.
+                </p>
+                <div class="resource-card-footer">
+                  <a
+                    class="resource-read-more-link link"
+                    href="./article.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Readmore
+                  </a>
+                  <span class="resource-date">October 6, 2021</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Get updates section -->
       <section class="get-updates">
-        <h2 class="get-updates-header">Get The Best Updates</h2>
-        <p class="get-updates-description">
-          Subscribe with your mail id to know the current update in book edition
-          at your fingertip with in a minute.
-        </p>
-        <form class="get-updates-form" action="subsribe">
-          <input
-            class="get-updates-email-field"
-            type="text"
-            placeholder="Your Email ID..."
-          />
-          <button class="get-updates-submit-button">Subscribe</button>
-        </form>
+        <div class="container">
+          <h2 class="get-updates-header section-header-main">
+            Get The Best Updates
+          </h2>
+          <p class="get-updates-description">
+            Subscribe with your mail id to know the current update in book
+            edition at your fingertip with in a minute.
+          </p>
+          <form class="get-updates-form" action="subsribe">
+            <input
+              class="get-updates-email-field"
+              type="text"
+              placeholder="Your Email ID..."
+            />
+            <button class="get-updates-submit-button button-secondary">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -717,11 +800,11 @@
     <footer class="footer">
       <div class="footer-links">
         <div class="footer-help-links">
-          <a href="./index.html">Pages</a>
+          <a class="page-logo link" href="./index.html">Pages</a>
           <ul class="footer-socials">
             <li class="footer-social-item">
               <a
-                class="footer-social-item-link"
+                class="footer-social-item-link link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -766,6 +849,7 @@
             </li>
             <li>
               <a
+                class="footer-social-item-link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -782,11 +866,11 @@
         <div class="footer-site-links">
           <ul class="footer-nav">
             <li class="footer-nav-section">
-              <h2>Explore</h2>
+              <h2 class="footer-nav-section-header">Explore</h2>
               <ul class="footer-nav-section-items">
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./index.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -796,7 +880,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./about.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -806,7 +890,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./articles.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -816,7 +900,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./store.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -826,7 +910,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./contact-us.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -837,11 +921,11 @@
               </ul>
             </li>
             <li class="footer-nav-section">
-              <h2>Utility Pages</h2>
+              <h2 class="footer-nav-section-header">Utility Pages</h2>
               <ul class="footer-nav-section-items">
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./style-guide.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -851,7 +935,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./404.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -861,7 +945,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./password-protected.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -871,7 +955,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./licenses.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -881,7 +965,7 @@
                 </li>
                 <li class="footer-nav-section-item">
                   <a
-                    class="footer-nav-section-item-link"
+                    class="footer-nav-section-item-link link"
                     href="./chagelog.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -894,11 +978,11 @@
           </ul>
         </div>
         <div>
-          <h2 class="footer-contacts">Keep in Touch</h2>
+          <h2 class="footer-nav-section-header">Keep in Touch</h2>
           <address class="company-address">
             Address:
             <a
-              class="company-address-link"
+              class="company-address-link link"
               href="https://goo.gl/maps/LnAj7oDDhJ7ywFmE9"
               target="_blank"
               rel="noopener noreferrer"
@@ -910,7 +994,7 @@
             <li class="footer-contacts-item">
               Mail:
               <a
-                class="footer-contacts-link"
+                class="footer-contacts-link link"
                 href="mailto:support@pages.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -921,7 +1005,7 @@
             <li class="footer-contacts-item">
               Phone:
               <a
-                class="footer-contacts-link"
+                class="footer-contacts-link link"
                 href="tel:+221234567900"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -935,7 +1019,7 @@
       <div class="copyright">
         &#64; Drafted by
         <a
-          class="copyright-design-link"
+          class="copyright-design-link link"
           href="https://www.victorflow.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -944,7 +1028,7 @@
         </a>
         - Powered by
         <a
-          class="copyright-host-link"
+          class="copyright-host-link link"
           href="https://webflow.com/"
           target="_blank"
           rel="noopener noreferrer"

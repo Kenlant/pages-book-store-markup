@@ -1,0 +1,522 @@
+:root {
+    /* fonts */
+    --font-main: "Inter";
+    --font-secondary: "Cardo";
+    
+    /* text-colors */
+    --clr-text-nav-link: #F6F8FC;
+    --clr-text-link-active: #FFCA42;
+    --clr-text-btn-main: #1B3764;
+    --clr-text-btn-secondary: #FFFFFF;
+    --clr-text-header-main: #FFFFFF;
+    --clr-text-header-secondary: #1B3764;
+    --clr-text-header-v3: #FFCA42;
+    --clr-text-main: #FFFFFF;
+    --clr-text-secondary: #B4C7E7;
+    --clr-text-v3: #969AA0;
+    --clr-text-v4: #1B3764;
+    --clr-text-price: #FFCA42;
+
+    /* text-backgrounds */
+    --clr-bg-main: #1B3764;
+    --clr-bg-secondary: #F5F8FC;
+    --clr-bg-v3: #F5F5F5;
+    --clr-bg-v4: #F4F8FF;
+    --clr-bg-v5: #FFFFFF;
+    --clr-bg-v6: #FFCA42;
+    --clr-bg-social-link: #FFFFFF;
+    --clr-bg-btn-main: #FFCA42;
+    --clr-bg-btn-main-active: #B48717;
+    --clr-bg-btn-secondary: "transparent";
+    --clr-bg-btn-v3: #1B3764;
+    --clr-bg-btn-v3-active: #071A3A;
+}
+
+body {
+    font-family: var(--font-main), "sans-serif";
+    font-style: "normal";
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.47;
+    color: var(--clr-text-v3);
+}
+
+h1, h2, h3, h4, h5, h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+a:hover {
+    color: none;
+}
+
+/* common styles start */
+
+.container {
+    width: 1300px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active,
+.link:focus {
+    color: var(--clr-text-link-active);
+}
+
+.button {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 1.47;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+.button-main {
+    background-color: var(--clr-bg-btn-main);
+    letter-spacing: 0.57px;
+    text-transform: capitalize;
+    color: var(--clr-text-btn-main);
+}
+
+.button-main:active,
+.button-main:hover,
+.button-main:focus {
+    background-color: var(--clr-bg-btn-main-active);
+}
+
+.button-secondary {
+    font-size: 18px;
+    line-height: 1.72;
+    color: var(--clr-text-main);
+    background-color: var(--clr-bg-btn-v3);
+}
+
+.button-secondary:active,
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: var(--clr-bg-btn-v3-active);
+}
+
+.section-header-main {
+    font-family: var(--font-secondary);
+    font-size: 42px;
+    line-height: 1.19;
+    text-transform: capitalize;
+    color: var(--clr-text-header-secondary);
+}
+
+/* header styles */
+
+.header {
+    background-color: var(--clr-bg-main);
+}
+
+.page-logo {
+    color: var(--clr-text-main);
+    font-weight: 700;
+}
+
+.header-social-link {
+    background-color: var(--clr-bg-social-link);
+}
+
+.page-navigation-link {
+    color: var(--clr-text-nav-link);
+    letter-spacing: 0.17px;
+}
+
+/* welcome section styles */
+
+.welcome {
+    background-color: var(--clr-bg-main);
+}
+
+.welcome-decoration-text {
+    font-family: "Cardo";
+    letter-spacing: 1.2px;
+    font-size: 21px;
+    line-height: 1.71;
+    color: var(--clr-text-main);
+}
+
+.welcome-header {
+    font-size: 64px;
+    line-height: 1.22;
+    color: var(--clr-text-header-main);
+    letter-spacing: 1.3px;
+}
+
+.welcome-text {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--clr-text-secondary);
+}
+
+.welcome-read-demo-button {
+    background-color: var(--clr-bg-btn-secondary);
+    text-decoration: underline;
+    letter-spacing: 0.38px;
+}
+
+.welcome-read-demo-button:hover,
+.welcome-read-demo-button:active,
+.welcome-read-demo-button:focus {
+    color: var(--clr-bg-btn-main);
+}
+
+.welcome-statistic-item-header {
+    font-size: 24px;
+    line-height: 1.21;
+    color: var(--clr-text-header-main);
+    letter-spacing: 0.48px;
+}
+
+.welcome-statistic-item-text {
+    font-size: 17px;
+    line-height: 1.59;
+    color: var(--clr-text-secondary);
+}
+
+/* author's books section styles*/
+
+.authors-book-header {
+    font-family: var(--font-secondary);
+    font-size: 32px;
+    line-height: 1.19;
+    letter-spacing: 0.32px;
+    color: var(--clr-text-header-secondary);
+}
+
+.authors-book-price {
+    font-size: 21px;
+    line-height: 1.57;
+    color: var(--clr-text-price);
+}
+
+.authors-book-link {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 1.21;
+    color: var(--clr-text-v4);
+}
+
+.authors-book-order-button {
+    background-color: var(--clr-bg-btn-secondary);
+    border: 1px solid var(--clr-bg-btn-main);
+}
+
+.authors-book-order-button:hover,
+.authors-book-order-button:active,
+.authors-book-order-button:focus {
+    background-color: var(--clr-bg-btn-main);
+}
+
+/* author info section */
+
+.author {
+    background-color: #F5F8FC;
+}
+
+.author-info-description {
+    line-height: 1.79;
+}
+
+.author-statistic-item-value {
+    font-family: var(--font-secondary);
+    font-size: 54px;
+    line-height: 1.79;
+    color: var(--clr-text-v4);
+}
+
+.author-statistic-item-parameter {
+    font-size: 17px;
+    line-height: 1.29;
+}
+
+.author-qr {
+    background-color: var(--clr-bg-main);
+}
+
+.author-info-item-name {
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--clr-text-header-v3);
+}
+
+.author-info-item-email,
+.author-info-email-link,
+.author-info-item-phone,
+.author-phone-link {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--clr-text-secondary);
+}
+
+.author-info-email-link,
+.author-phone-link {
+    letter-spacing: 0.19px;
+}
+
+/* trusted section styles */
+
+.partner-header {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 1.21;
+    color: var(--clr-text-header-secondary);
+}
+
+/* get book section styles */
+
+.get-book {
+    background-color: var(--clr-bg-main);
+}
+
+.get-book-header {
+    font-family: var(--font-secondary);
+    font-size: 45px;
+    line-height: 1.2;
+    color: var(--clr-text-header-main);
+}
+
+.get-book-description {
+    color: var(--clr-text-secondary);
+}
+
+.get-book-order-button {
+    color: var(--clr-text-btn-secondary);
+    background-color: var(--clr-bg-btn-secondary);
+    border: 1px solid var(--clr-bg-btn-main);
+}
+
+.get-book-order-button:hover,
+.get-book-order-button:focus,
+.get-book-order-button:active {
+    background-color: var(--clr-bg-btn-main);
+    color: var(--clr-text-btn-main);
+}
+
+.skills-list-item {
+    background-color: var(--clr-bg-v4);
+}
+
+/* knowledge section styles */
+
+.knowledge {
+    background-color: var(--clr-bg-v4);
+}
+
+.knowledge-list-item {
+    background-color: var(--clr-bg-v5);
+}
+
+.knowledge-item-header {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 1.21;
+    color: var(--clr-text-header-secondary);
+}
+
+.knowledge-item-description {
+    line-height: 1.68;
+}
+
+.knowledge-item-parameter-name {
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    line-height: 1.41;
+    color: var(--clr-text-header-secondary);
+}
+
+.knowledge-parameter-value {
+    font-size: 17px;
+    line-height: 1.59;
+}
+
+.knowledge-chapters-description-link,
+.knowledge-contact-us-link {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--clr-text-v3);
+}
+
+.knowledge-questions-text {
+    color: var(--clr-text-v4);
+    letter-spacing: 0.19px;
+}
+
+/* reader revies section styles */
+
+.readers-reviews-description {
+    font-size: 19px;
+    line-height: 1.79;
+}
+
+.rating-text {
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--clr-text-v4);
+}
+
+.rating-description {
+    color: var(--clr-text-v4);
+}
+
+.reader-review {
+    background-color: var(--clr-bg-main);
+}
+
+.reader-review-name {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 1.21;
+    color: var(--clr-text-header-main);
+}
+
+.reader-review-header {
+    font-family: var(--font-secondary);
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--clr-text-header-main);
+}
+
+.reader-review-text {
+    font-size: 18px;
+    line-height: 1.61;
+    color: var(--clr-text-secondary);
+}
+
+/* resource section styles */
+
+.resources {
+    background-color: var(--clr-bg-v4);
+}
+
+.resource-header {
+    font-size: 24px;
+    line-height: 1.47;
+    letter-spacing: 0.24px;
+    color: var(--clr-text-header-secondary);
+}
+
+.resource-description {
+    line-height: 1.58;
+}
+
+.resource-read-more-link {
+    line-height: 1.21;
+    letter-spacing: 0.38px;
+    color: var(--clr-text-v4);
+    font-family: var(--font-secondary);
+}
+
+.resource-date {
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--clr-text-v4);
+}
+
+/* get updates section styles */
+
+.get-updates > .container {
+    background-color: var(--clr-bg-v6);
+}
+
+.get-updates-description {
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--clr-text-v4);
+}
+
+.get-updates-email-field {
+    font-size: 18px;
+    line-height: 1.72;
+    letter-spacing: 0.18px;
+}
+
+.get-updates-email-field::placeholder {
+    color: var(--clr-text-secondary);
+}
+
+/* footer styles */
+
+.footer {
+    background-color: var(--clr-bg-main);
+}
+
+.footer-nav-section-header {
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    line-height: 1.42;
+    letter-spacing: 0.384px;
+    color: var(--clr-text-header-main);
+}
+
+.footer-nav-section-item-link {
+    font-size: 18px;
+    line-height: 1.72;
+    letter-spacing: 0.18px;
+    color: var(--clr-text-secondary);
+}
+
+.company-address-link,
+.footer-contacts-link,
+.footer-contacts-link {
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.82;
+    letter-spacing: 0.18px;
+    color: var(--clr-text-secondary);
+}
+
+.copyright {
+    font-size: 17px;
+    line-height: 1.52;
+    letter-spacing: 0.17px;
+    color: var(--clr-text-secondary);
+}
+
+.copyright-design-link {
+    font-size: 17px;
+    line-height: 1.53;
+    letter-spacing: 0.17px;
+    color: var(--clr-text-main);
+}
+
+.copyright-host-link {
+    font-size: 18px;
+    line-height: 1.63;
+    letter-spacing: 0.17px;
+    color: var(--clr-text-main);
+}

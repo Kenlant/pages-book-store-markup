@@ -19,106 +19,107 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="page-logo link" href="./index.html">Pages</a>
-      <ul class="header-socials">
-        <li class="header-socials-item">
-          <a
-            class="header-social-link"
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="header-social-link-image"
-              src="./images/facebook-icon-black.svg"
-              alt="facebook"
-              aria-label="facebook"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            class="header-social-link"
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="header-social-link-image"
-              src="./images/twitter-icon-black.svg"
-              alt="twitter"
-              aria-label="twitter"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            class="header-social-link"
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="header-social-link-image"
-              src="./images/linkedin-icon-black.svg"
-              alt="linkedin"
-              aria-label="linkedin"
-            />
-          </a>
-        </li>
-      </ul>
-      <nav class="page-navigation">
-        <ul class="page-navigation-links">
-          <li class="page-navigation-item">
+      <div class="container">
+        <a class="page-logo link" href="./index.html">
+          <svg class="page-logo-image" width="24.5" height="28">
+            <use href="./images/icons.svg#book"></use>
+          </svg>
+          Pages
+        </a>
+        <ul class="header-socials list">
+          <li class="header-socials-item">
             <a
-              class="page-navigation-link link"
-              href="./index.html"
+              class="header-social-link"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Home
+              <svg class="header-social-link-icon" width="8" height="14">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a
-              class="page-navigation-link link"
-              href="./about.html"
+              class="header-social-link"
+              href="https://twitter.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              About
+              <svg class="header-social-link-icon" width="14" height="11">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a
-              class="page-navigation-link link"
-              href="./pages.html"
+              class="header-social-link"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Pages
+              <svg class="header-social-link-icon" width="15" height="13">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
             </a>
-          </li>
-          <li>
-            <a
-              class="page-navigation-link link"
-              href="./contact-us.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contact Us</a
-            >
           </li>
         </ul>
-        <button class="nav-order-button button button-main" type="button">
-          Order Today
-        </button>
-      </nav>
+        <nav class="page-navigation">
+          <ul class="page-navigation-links list">
+            <li class="page-navigation-item">
+              <a
+                class="page-navigation-link link"
+                href="./index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Home
+              </a>
+            </li>
+            <li class="page-navigation-item">
+              <a
+                class="page-navigation-link link"
+                href="./about.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                About
+              </a>
+            </li>
+            <li class="page-navigation-item">
+              <a
+                class="page-navigation-link link"
+                href="./pages.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pages
+              </a>
+            </li>
+            <li class="page-navigation-item">
+              <a
+                class="page-navigation-link link"
+                href="./contact-us.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact Us</a
+              >
+            </li>
+          </ul>
+          <svg class="nav-order-button-icon" width="17" height="17">
+            <use href="./images/icons.svg#shopping-cart"></use>
+          </svg>
+          <button class="nav-order-button button button-main" type="button">
+            Order Today
+          </button>
+        </nav>
+      </div>
     </header>
     <!-- Main -->
     <main class="main">
       <!-- Welcome section -->
-      <section class="welcome">
+      <section class="welcome section">
         <div class="container">
           <div class="welcome-left-column">
             <span class="welcome-decoration-text">Welcome To Pages!!!</span>
@@ -127,37 +128,39 @@
               We believe that reading books are essential to a healthy culture.
               They’re where authors can connect with readers.
             </p>
-            <button
-              class="welcome-order-button button button-main"
-              type="button"
-            >
-              Order Today
-            </button>
-            <button class="welcome-read-demo-button button">
-              Read Free Demo
-            </button>
+            <div class="welcome-button-block">
+              <button
+                class="welcome-order-button button button-main"
+                type="button"
+              >
+                Order Today
+              </button>
+              <button class="welcome-read-demo-button button">
+                Read Free Demo
+              </button>
+            </div>
+            <ul class="welcome-statistic list">
+              <li class="welcome-statistic-item">
+                <h2 class="welcome-statistic-item-header marked">Pages:</h2>
+                <span class="welcome-statistic-item-text">250 pages</span>
+              </li>
+              <li class="welcome-statistic-item">
+                <h2 class="welcome-statistic-item-header marked">Length:</h2>
+                <span class="welcome-statistic-item-text">10 Hours</span>
+              </li>
+              <li class="welcome-statistic-item">
+                <h2 class="welcome-statistic-item-header marked">Rating:</h2>
+                <span class="welcome-statistic-item-text">
+                  4.5/5 (305 ratings)
+                </span>
+              </li>
+            </ul>
           </div>
-          <ul class="welcome-statistic">
-            <li class="welcome-statistic-item">
-              <h2 class="welcome-statistic-item-header">Pages:</h2>
-              <span class="welcome-statistic-item-text">250 pages</span>
-            </li>
-            <li class="welcome-statistic-item">
-              <h2 class="welcome-statistic-item-header">Length:</h2>
-              <span class="welcome-statistic-item-text">10 Hours</span>
-            </li>
-            <li class="welcome-statistic-item">
-              <h2 class="welcome-statistic-item-header">Rating:</h2>
-              <span class="welcome-statistic-item-text">
-                4.5/5 (305 ratings)
-              </span>
-            </li>
-          </ul>
           <div class="welcome-right-column">
             <img
               class="welcome-book-cover"
-              src="./images/main-image.jpg"
-              alt="main-image"
+              src="./images/index/main-image.png"
+              alt="The dark light by John Abraham"
               width="592"
               height="800"
             />
@@ -171,12 +174,12 @@
           <h2 class="authors-book-main-header section-header-main">
             The Author’s Book
           </h2>
-          <ul class="authors-books">
+          <ul class="authors-books list">
             <li class="authors-books-item">
               <article class="authors-book-card">
                 <img
                   class="authors-book-image"
-                  src="./images/book-cover-1.jpg"
+                  src="./images/index/book-cover-1.png"
                   alt="book-cover"
                   width="285"
                   height="382"
@@ -189,7 +192,7 @@
                     questions.
                   </p>
                   <a
-                    class="authors-book-link link"
+                    class="authors-book-link link marked"
                     href="./book.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -209,7 +212,7 @@
               <article class="authors-book-card">
                 <img
                   class="authors-book-image"
-                  src="./images/book-cover-2.jpg"
+                  src="./images/index/book-cover-2.png"
                   alt="book-cover"
                   width="285"
                   height="382"
@@ -222,7 +225,7 @@
                     questions.
                   </p>
                   <a
-                    class="authors-book-link link"
+                    class="authors-book-link link marked"
                     href="./book.html"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -247,7 +250,7 @@
         <div class="container">
           <img
             class="author-photo"
-            src="./images/author.jpg"
+            src="./images/index/author.png"
             alt="autor"
             width="525"
             height="620"
@@ -262,10 +265,10 @@
               new writers, where children get hooked on the thrill of reading
               that can last a lifetime.
             </p>
-            <ul class="author-statistic">
+            <ul class="author-statistic list">
               <li class="author-statistic-item">
-                <span class="author-statistic-item-value">02</span
-                ><span class="author-statistic-item-parameter"
+                <span class="author-statistic-item-value">02</span>
+                <span class="author-statistic-item-parameter"
                   >Books Published</span
                 >
               </li>
@@ -286,17 +289,17 @@
               <h3 class="author-qr-header visually-hidden">Author</h3>
               <img
                 class="author-qr-image"
-                src="./images/author-qr-code.jpg"
+                src="./images/index/author-qr-code.jpg"
                 alt="QR Code"
                 width="130"
                 height="130"
               />
-              <ul class="author-info-items">
+              <ul class="author-info-items list">
                 <li class="author-info-item-name">
                   <h4>John Abraham , Ph.d</h4>
                 </li>
                 <li class="author-info-item-email">
-                  Main:
+                  Mail:
                   <a
                     class="author-info-email-link link"
                     href="mailto:johnabraham@gmail.com"
@@ -329,12 +332,12 @@
           <h2 class="trusted-header section-header-main">
             Trusted By The Best
           </h2>
-          <ul class="partner-list">
+          <ul class="partner-list list">
             <li class="partner-list-item">
-              <article class="partnet-card">
+              <article class="partner-card">
                 <img
                   class="partner-image"
-                  src="./images/trusted-1.jpg"
+                  src="./images/index/trusted-1.jpg"
                   alt="Trusted Shop"
                   width="189"
                   height="100"
@@ -350,7 +353,7 @@
               <article class="partner-card">
                 <img
                   class="partner-image"
-                  src="./images/trusted-2.jpg"
+                  src="./images/index/trusted-2.jpg"
                   alt="Trusted Shop"
                   width="189"
                   height="100"
@@ -366,7 +369,7 @@
               <article class="partner-card">
                 <img
                   class="partner-image"
-                  src="./images/trusted-3.jpg"
+                  src="./images/index/trusted-3.jpg"
                   alt="Trusted Shop"
                   width="189"
                   height="100"
@@ -382,7 +385,7 @@
               <article class="partner-card">
                 <img
                   class="partner-image"
-                  src="./images/trusted-4.jpg"
+                  src="./images/index/trusted-4.jpg"
                   alt="Trusted Shop"
                   width="189"
                   height="100"
@@ -402,7 +405,9 @@
       <section class="get-book">
         <div class="container">
           <div class="get-book-info">
-            <h2 class="get-book-header">Get Book Copy Today!</h2>
+            <h2 class="get-book-header section-header-main">
+              Get Book Copy Today!
+            </h2>
             <p class="get-book-description">
               We believe that bookstores are essential to a healthy culture.
               They’re where authors can connect with readers.
@@ -416,7 +421,7 @@
           </div>
           <img
             class="get-book-image"
-            src="./images/tea-book.jpg"
+            src="./images/index/tea-book.png"
             alt="Book and Tea"
             width="560"
             height="394"
@@ -426,40 +431,43 @@
 
       <!-- Skills section -->
       <section class="skills">
-        <h2 class="skill-header section-header-main">What Will You Learn?</h2>
-        <ul class="skills-list">
-          <li class="skills-list-item">
-            <h3 class="skills-item-header visually-hidden">Skill</h3>
-            <p class="skills-item-description">
-              Use HDFS & Map Reduce for storing & analyzing data at scale.
-            </p>
-          </li>
-          <li class="skills-list-item">
-            <h3 class="skills-item-header visually-hidden">Skill</h3>
-            <p class="skills-item-description">
-              Consume streaming data using Spark Streaming, Flink, and Storm.
-            </p>
-          </li>
-          <li class="skills-list-item">
-            <h3 class="skills-item-header visually-hidden">Skill</h3>
-            <p class="skills-item-description">
-              Choose an appropriate data storage technology for your application
-            </p>
-          </li>
-          <li class="skills-list-item">
-            <h3 class="skills-item-header visually-hidden">Skill</h3>
-            <p class="skills-item-description">
-              Analyze non-relational data using HBase, Cassandra, and MongoDB.
-            </p>
-          </li>
-        </ul>
-        <img
-          class="skills-image"
-          src="./images/reading.jpg"
-          alt="Reading"
-          width="535"
-          height="632"
-        />
+        <div class="container">
+          <h2 class="skill-header section-header-main">What Will You Learn?</h2>
+          <div class="skills-content">
+            <ul class="skills-list list">
+              <li class="skills-list-item" data-order="01">
+                <p class="skills-item-description">
+                  Use HDFS & Map Reduce for storing & analyzing data at scale.
+                </p>
+              </li>
+              <li class="skills-list-item" data-order="02">
+                <p class="skills-item-description">
+                  Consume streaming data using Spark Streaming, Flink, and
+                  Storm.
+                </p>
+              </li>
+              <li class="skills-list-item" data-order="03">
+                <p class="skills-item-description">
+                  Choose an appropriate data storage technology for your
+                  application
+                </p>
+              </li>
+              <li class="skills-list-item" data-order="04">
+                <p class="skills-item-description">
+                  Analyze non-relational data using HBase, Cassandra, and
+                  MongoDB.
+                </p>
+              </li>
+            </ul>
+            <img
+              class="skills-image"
+              src="./images/index/reading.png"
+              alt="Reading"
+              width="535"
+              height="632"
+            />
+          </div>
+        </div>
       </section>
 
       <!-- Knowledge section -->
@@ -468,20 +476,24 @@
           <h2 class="knowledge-header section-header-main">
             Enhance knowledge & Vision
           </h2>
-          <ul class="knowledge-list">
+          <ul class="knowledge-list list">
             <li class="knowledge-list-item">
               <h3 class="knowledge-item-header">Chapter-1 Get Started Intro</h3>
               <p class="knowledge-item-description">
                 You can double your knowledge by reading this ever needed book
                 that can last a lifetime.
               </p>
-              <ul class="knowledge-item-parameters">
+              <ul class="knowledge-item-parameters list">
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Pages:</span
+                  >
                   <span class="knowledge-parameter-value">106 pages</span>
                 </li>
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Length:</span
+                  >
                   <span class="knowledge-parameter-value">2 Hours</span>
                 </li>
               </ul>
@@ -492,13 +504,17 @@
                 It will help to improve your life career with the perfect and
                 needed knowledge about your life.
               </p>
-              <ul class="knowledge-item-parameters">
+              <ul class="knowledge-item-parameters list">
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Pages:</span
+                  >
                   <span class="knowledge-parameter-value">180 pages</span>
                 </li>
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Length:</span
+                  >
                   <span class="knowledge-parameter-value">3 Hours</span>
                 </li>
               </ul>
@@ -509,13 +525,17 @@
                 We wanted to create an easy, convenient way for you to get your
                 books & support.
               </p>
-              <ul class="knowledge-item-parameters">
+              <ul class="knowledge-item-parameters list">
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Pages:</span
+                  >
                   <span class="knowledge-parameter-value">250 pages</span>
                 </li>
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Length:</span
+                  >
                   <span class="knowledge-parameter-value">4 Hours</span>
                 </li>
               </ul>
@@ -526,13 +546,17 @@
                 Promote your book via Pages shop to support your writing &
                 reading career.
               </p>
-              <ul class="knowledge-item-parameters">
+              <ul class="knowledge-item-parameters list">
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Pages:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Pages:</span
+                  >
                   <span class="knowledge-parameter-value">175 pages</span>
                 </li>
                 <li class="knowledge-item-parameter">
-                  <span class="knowledge-item-parameter-name">Length:</span>
+                  <span class="knowledge-item-parameter-name marked"
+                    >Length:</span
+                  >
                   <span class="knowledge-parameter-value">3 Hours</span>
                 </li>
               </ul>
@@ -569,7 +593,7 @@
         <div class="container">
           <div class="readers-reviews-info">
             <h2 class="readers-reviews-header section-header-main">
-              Words From Our
+              Words From Our Readers
             </h2>
             <p class="readers-reviews-description">
               We believe that bookstores are essential to a healthy culture.
@@ -579,98 +603,107 @@
             </p>
             <div class="readers-review-overall">
               <div class="rating">
-                <div class="rating-item"></div>
-                <div class="rating-item"></div>
-                <div class="rating-item"></div>
-                <div class="rating-item"></div>
-                <div class="rating-item"></div>
+                <div>
+                  <div class="rating-item full"></div>
+                  <div class="rating-item full"></div>
+                  <div class="rating-item full"></div>
+                  <div class="rating-item full"></div>
+                  <div class="rating-item half"></div>
+                </div>
+                <span class="rating-text">(4.8/5)</span>
               </div>
-              <span class="rating-text">(4.8/5)</span>
               <p class="rating-description">Overall Customer Ratings</p>
             </div>
           </div>
-          <div>
-            <ul class="reader-review-list">
-              <li class="reader-review-list-item">
-                <article class="reader-review">
+
+          <ul class="reader-review-list list">
+            <li class="reader-review-list-item">
+              <article class="reader-review">
+                <div class="reader-review-header-block">
                   <img
                     class="reader-review-photo"
-                    src="./images/reader-1.jpg"
+                    src="./images/index/reader-1.jpg"
                     alt="Reader"
                     width="85"
                     height="85"
                   />
-                  <h3 class="reader-review-name">James Williams</h3>
-                  <div class="rating">
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
+                  <div class="reader-review-header-right-column">
+                    <h3 class="reader-review-name">James Williams</h3>
+                    <div class="rating">
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item half"></div>
+                    </div>
                   </div>
-                  <h4 class="reader-review-header">
-                    “ Great Books Collections ”
-                  </h4>
-                  <p class="reader-review-text">
-                    I was searching this book for many years and I was happy
-                    that I could find it here.
-                  </p>
-                </article>
-              </li>
-              <li class="reader-review-list-item">
-                <article class="reader-review">
+                </div>
+                <h4 class="reader-review-header">
+                  “ Great Books Collections ”
+                </h4>
+                <p class="reader-review-text">
+                  I was searching this book for many years and I was happy that
+                  I could find it here.
+                </p>
+              </article>
+            </li>
+            <li class="reader-review-list-item">
+              <article class="reader-review">
+                <div class="reader-review-header-block">
                   <img
                     class="reader-review-photo"
-                    src="./images/reader-2.jpg"
+                    src="./images/index/reader-3.jpg"
                     alt="Reader"
                     width="85"
                     height="85"
                   />
-                  <h3 class="reader-review-name">Chris Adams</h3>
-                  <div class="rating">
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
+                  <div class="reader-review-header-right-column">
+                    <h3 class="reader-review-name">Angeline Flora</h3>
+                    <div class="rating">
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item half"></div>
+                    </div>
                   </div>
-                  <h4 class="reader-review-header">
-                    “ Perfect Response Author”
-                  </h4>
-                  <p class="reader-review-text">
-                    I had a question about the book and the author response was
-                    great & comfort.
-                  </p>
-                </article>
-              </li>
-              <li class="reader-review-list-item">
-                <article class="reader-review">
+                </div>
+                <h4 class="reader-review-header">“ Creative Writing Skill”</h4>
+                <p class="reader-review-text">
+                  Sent an email after to books arrived to ask about the author &
+                  I received a reply.
+                </p>
+              </article>
+            </li>
+            <li class="reader-review-list-item">
+              <article class="reader-review">
+                <div class="reader-review-header-block">
                   <img
                     class="reader-review-photo"
-                    src="./images/reader-3.jpg"
+                    src="./images/index/reader-2.jpg"
                     alt="Reader"
                     width="85"
                     height="85"
                   />
-                  <h3 class="reader-review-name">Angeline Flora</h3>
-                  <div class="rating">
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
-                    <div class="rating-item"></div>
+                  <div class="reader-review-header-right-column">
+                    <h3 class="reader-review-name">Chris Adams</h3>
+                    <div class="rating">
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item full"></div>
+                      <div class="rating-item"></div>
+                    </div>
                   </div>
-                  <h4 class="reader-review-header">
-                    “ Creative Writing Skill”
-                  </h4>
-                  <p class="reader-review-text">
-                    Sent an email after to books arrived to ask about the author
-                    & I received a reply.
-                  </p>
-                </article>
-              </li>
-            </ul>
-          </div>
+                </div>
+                <h4 class="reader-review-header">“ Perfect Response Author”</h4>
+                <p class="reader-review-text">
+                  I had a question about the book and the author response was
+                  great & comfort.
+                </p>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -680,92 +713,104 @@
           <h2 class="resources-header section-header-main">
             Articles & Resources
           </h2>
-          <ul class="resource-list">
+          <ul class="resource-list list">
             <li class="resource-list-item">
               <article class="resource-card">
-                <img
-                  class="resource-image"
-                  src="./images/article-1.jpg"
-                  alt="Article"
-                  width="420"
-                  height="350"
-                />
-                <h3 class="resource-header">
-                  Significant reading has more info number
-                </h3>
-                <p class="resource-description">
-                  Override the digital divide with additional clickthroughs from
-                  DevOps for real-time schemas.
-                </p>
-                <div class="resource-card-footer">
-                  <a
-                    class="resource-read-more-link link"
-                    href="./article.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Readmore
-                  </a>
-                  <span class="resource-date">October 6, 2021</span>
-                </div>
+                <figure class="resource-image-container">
+                  <img
+                    class="resource-image"
+                    src="./images/index/article-1.jpg"
+                    alt="Article"
+                    width="420"
+                    height="350"
+                  />
+                  <figcaption class="resource-image-info">
+                    <h3 class="resource-header">
+                      Significant reading has more info number
+                    </h3>
+                    <p class="resource-description">
+                      Override the digital divide with additional clickthroughs
+                      from DevOps for real-time schemas.
+                    </p>
+                    <div class="resource-card-footer">
+                      <a
+                        class="resource-read-more-link link"
+                        href="./article.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Readmore
+                      </a>
+                      <span class="resource-date">October 6, 2021</span>
+                    </div>
+                  </figcaption>
+                </figure>
               </article>
             </li>
             <li class="resource-list-item">
               <article class="resource-card">
-                <img
-                  class="resource-image"
-                  src="./images/article-2.jpg"
-                  alt="Article"
-                  width="420"
-                  height="350"
-                />
-                <h3 class="resource-header">
-                  Many variations of pass majority have suffered
-                </h3>
-                <p class="resource-description">
-                  Capitalize on low-hanging fruit to identify a ballpark
-                  value-added activity to beta test.
-                </p>
-                <div class="resource-card-footer">
-                  <a
-                    class="resource-read-more-link link"
-                    href="./article.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Readmore
-                  </a>
-                  <span class="resource-date">October 6, 2021</span>
-                </div>
+                <figure class="resource-image-container">
+                  <img
+                    class="resource-image"
+                    src="./images/index/article-2.jpg"
+                    alt="Article"
+                    width="420"
+                    height="350"
+                  />
+                  <figcaption class="resource-image-info">
+                    <h3 class="resource-header">
+                      Many variations of pass majority have suffered
+                    </h3>
+                    <p class="resource-description">
+                      Capitalize on low-hanging fruit to identify a ballpark
+                      value-added activity to beta test.
+                    </p>
+                    <div class="resource-card-footer">
+                      <a
+                        class="resource-read-more-link link"
+                        href="./article.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Readmore
+                      </a>
+                      <span class="resource-date">October 6, 2021</span>
+                    </div>
+                  </figcaption>
+                </figure>
               </article>
             </li>
             <li class="resource-list-item">
               <article class="resource-card">
-                <img
-                  class="resource-image"
-                  src="./images/article-3.jpg"
-                  alt="Article"
-                  width="420"
-                  height="350"
-                />
-                <h3 class="resource-header">
-                  Words which don’t look even slightly believable
-                </h3>
-                <p class="resource-description">
-                  Podcasting operational change management inside of workflows
-                  to establish a framework.
-                </p>
-                <div class="resource-card-footer">
-                  <a
-                    class="resource-read-more-link link"
-                    href="./article.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Readmore
-                  </a>
-                  <span class="resource-date">October 6, 2021</span>
-                </div>
+                <figure class="resource-image-container">
+                  <img
+                    class="resource-image"
+                    src="./images/index/article-3.jpg"
+                    alt="Article"
+                    width="420"
+                    height="350"
+                  />
+                  <figcaption class="resource-image-info">
+                    <h3 class="resource-header">
+                      Words which don’t look even slightly believable
+                    </h3>
+                    <p class="resource-description">
+                      Podcasting operational change management inside of
+                      workflows to establish a framework.
+                    </p>
+                    <div class="resource-card-footer">
+                      <a
+                        class="resource-read-more-link link"
+                        href="./article.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Readmore
+                      </a>
+                      <span class="resource-date">October 6, 2021</span>
+                    </div>
+                  </figcaption>
+                </figure>
               </article>
             </li>
           </ul>
@@ -798,243 +843,239 @@
 
     <!-- Foorter  -->
     <footer class="footer">
-      <div class="footer-links">
-        <div class="footer-help-links">
-          <a class="page-logo link" href="./index.html">Pages</a>
-          <ul class="footer-socials">
-            <li class="footer-social-item">
-              <a
-                class="footer-social-item-link link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="footer-social-item-image"
-                  src="./images/facebook-icon-white.svg"
-                  alt="facebook"
-                  aria-label="facebook"
-                />
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="footer-social-item-link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="footer-social-item-image"
-                  src="./images/twitter-icon-white.svg"
-                  alt="twitter"
-                  aria-label="twritter"
-                />
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="footer-social-item-link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="footer-social-item-image"
-                  src="./images/linkedin-icon-white.svg"
-                  alt="linkedin"
-                  aria-label="linkedin"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                class="footer-social-item-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/instagram-icon-white.svg"
-                  alt="instagram"
-                  aria-label="instagram"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-site-links">
-          <ul class="footer-nav">
-            <li class="footer-nav-section">
-              <h2 class="footer-nav-section-header">Explore</h2>
-              <ul class="footer-nav-section-items">
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./index.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./about.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    About
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./articles.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Articles
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./store.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Our Store
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./contact-us.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer-nav-section">
-              <h2 class="footer-nav-section-header">Utility Pages</h2>
-              <ul class="footer-nav-section-items">
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./style-guide.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Style Guide
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./404.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    404 Not Found
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./password-protected.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Password Protected
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./licenses.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Licenses
-                  </a>
-                </li>
-                <li class="footer-nav-section-item">
-                  <a
-                    class="footer-nav-section-item-link link"
-                    href="./chagelog.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Changelog
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="footer-nav-section-header">Keep in Touch</h2>
-          <address class="company-address">
-            Address:
-            <a
-              class="company-address-link link"
-              href="https://goo.gl/maps/LnAj7oDDhJ7ywFmE9"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              24A Kingston St, Los Vegas NC 28202, USA.
+      <div class="container">
+        <div class="footer-links">
+          <div class="footer-help-links">
+            <a class="page-logo link" href="./index.html">
+              <svg class="page-logo-image" width="24.5" height="28">
+                <use href="./images/icons.svg#book"></use>
+              </svg>
+              Pages
             </a>
-          </address>
-          <ul class="footer-contacts-links">
-            <li class="footer-contacts-item">
-              Mail:
-              <a
-                class="footer-contacts-link link"
-                href="mailto:support@pages.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                support@pages.com
-              </a>
-            </li>
-            <li class="footer-contacts-item">
-              Phone:
-              <a
-                class="footer-contacts-link link"
-                href="tel:+221234567900"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                (+22) 123 - 4567 - 900
-              </a>
-            </li>
-          </ul>
+            <ul class="footer-socials list">
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-item-link link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-social-link-icon" width="9" height="16">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-item-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-social-link-icon" width="16" height="13">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-item-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-social-link-icon" width="14" height="14">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer-social-item-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="footer-social-link-icon" width="17" height="17">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-site-links">
+            <ul class="footer-nav list">
+              <li class="footer-nav-section">
+                <h2 class="footer-nav-section-header">Explore</h2>
+                <ul class="footer-nav-section-items list">
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./about.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./articles.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Articles
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./store.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Our Store
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./contact-us.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav-section">
+                <ul class="footer-nav-section-items list">
+                  <li class="footer-nav-section-item">
+                    <h2 class="footer-nav-section-header">Utility Pages</h2>
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./style-guide.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Style Guide
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./404.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      404 Not Found
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./password-protected.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Password Protected
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./licenses.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Licenses
+                    </a>
+                  </li>
+                  <li class="footer-nav-section-item">
+                    <a
+                      class="footer-nav-section-item-link link"
+                      href="./chagelog.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Changelog
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-nav-section footer-contacts">
+                <h2 class="footer-nav-section-header">Keep in Touch</h2>
+                <address class="company-address">
+                  Address:
+                  <a
+                    class="company-address-link link"
+                    href="https://goo.gl/maps/LnAj7oDDhJ7ywFmE9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    24A Kingston St, Los Vegas NC 28202, USA.
+                  </a>
+                </address>
+                <ul class="footer-contacts-links list">
+                  <li class="footer-contacts-item">
+                    Mail:
+                    <a
+                      class="footer-contacts-link link"
+                      href="mailto:support@pages.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      support@pages.com
+                    </a>
+                  </li>
+                  <li class="footer-contacts-item">
+                    Phone:
+                    <a
+                      class="footer-contacts-link link"
+                      href="tel:+221234567900"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      (+22) 123 - 4567 - 900
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="copyright">
-        &#64; Drafted by
-        <a
-          class="copyright-design-link link"
-          href="https://www.victorflow.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          VictorFlow
-        </a>
-        - Powered by
-        <a
-          class="copyright-host-link link"
-          href="https://webflow.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Webflow
-        </a>
+        <div class="copyright">
+          &#64; Drafted by
+          <a
+            class="copyright-design-link link"
+            href="https://www.victorflow.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            VictorFlow
+          </a>
+          - Powered by
+          <a
+            class="copyright-host-link link"
+            href="https://webflow.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Webflow
+          </a>
+        </div>
       </div>
     </footer>
   </body>
